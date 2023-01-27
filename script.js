@@ -22,6 +22,7 @@ let alphabet = 'QWERTYUIOPASDFGHJKLZXCVBNM';
 let alphabetButton = [];
 
 console.log(alphabet);
+console.log(alphabetButton);
 
 let firstRow = document.getElementById('firstRow');
 let secondRow = document.getElementById('secondRow');
