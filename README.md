@@ -3,7 +3,7 @@
 
 ![image](https://user-images.githubusercontent.com/106253137/215091576-b02db13f-e262-4824-8a9a-d2b546938b05.png)
 
-The famous childhood game, The Hangman. 
+The popular childhood game, The Hangman. 
 A good starting project to test your JS skills. 
 
 JS technologies used: DOM Manipulation, API calls, Event Listeners.
