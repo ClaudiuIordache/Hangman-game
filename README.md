@@ -1,7 +1,7 @@
 # Hangman-game
 -my first project made in nov. 2021-
 
-![image](https://user-images.githubusercontent.com/106253137/215090103-8a717d39-6a54-499e-a1ab-f1bb64561c11.png)
+![image](https://user-images.githubusercontent.com/106253137/215091576-b02db13f-e262-4824-8a9a-d2b546938b05.png)
 
 The famous childhood game, The Hangman. 
 A good starting project to test your JS skills. 
