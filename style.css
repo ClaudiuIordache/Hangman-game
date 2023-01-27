@@ -1,0 +1,163 @@
+* {
+    background-color: antiquewhite;
+}
+
+.entirePage {
+    margin:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.item-0 {
+    grid-column-start:1;
+    grid-column-end:1; 
+    grid-row-start:1;
+    grid-row-end:1;
+      
+    
+}
+.item-1 {
+    grid-column-start:1;
+    grid-column-end:1; 
+    grid-row-start:2;
+    grid-row-end:2;
+    
+}
+
+.item-2 {
+    grid-column-start:1;
+    grid-column-end:1; 
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+.item-3 {
+    grid-column-start:2;
+    grid-column-end:2; 
+    grid-row-start:1;
+    grid-row-end:1;
+    
+}
+
+.item-4 {
+    grid-column-start:2;
+    grid-column-end:2; 
+    grid-row-start:2;
+    grid-row-end:2;
+}
+
+
+#Hangman {
+    
+}
+
+.reset {
+    height:60px;
+    width: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 12%;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.57);
+}
+
+.reset:hover {
+    background-color: rgba(0, 0, 255, 0.252);
+}
+
+.reset:active {
+    background-color: rgba(0, 0, 255, 0.447);
+}
+
+#title {
+    font-size:50px;
+}
+
+.keyboard {
+    display:grid;
+    margin:5px;
+    padding: 15px;
+    border: solid 5px rgba(0, 0, 255, 0.315) ;
+    border-radius: 5%;
+    background-color: rgba(255, 168, 114, 0.2);
+    gap: 10px;
+    height: 200px;
+    width: 600px;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-template-rows: repeat(3, 2fr) ;
+    
+}
+
+#firstRow {
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    background-color: rgba(255, 168, 114, 0.2);
+    
+}
+
+#secondRow {
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    background-color: rgba(255, 168, 114, 0.2);
+}   
+
+#thirdRow {
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    background-color: rgba(255, 168, 114, 0.2);
+    
+}
+
+#button {
+    background-color: rgba(0, 0, 255, 0.397);
+
+    border-radius: 30%;
+    width: 45px;
+    height: 40px;
+    font-weight: bold;
+    font-size:25px;
+}
+
+#button:hover {
+    background-color:rgba(172, 172, 255, 0.377);
+}
+
+#button:active {
+    background-color:rgb(74, 74, 209);
+}
+
+#guessedLetters {
+    margin:20px;
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#buttonAfterClickRight {
+    background-color: rgba(78, 235, 125, 0.747);
+    color:black;
+    opacity: 0.5;
+    border-radius: 30%;
+    width: 45px;
+    height: 40px;
+    font-weight: bold;
+    font-size:25px;
+}
+
+#buttonAfterClickWrong {
+    background-color: rgba(255, 91, 91, 0.397);
+    color:black;
+    opacity: 0.5;
+    border-radius: 30%;
+    width: 45px;
+    height: 40px;
+    font-weight: bold;
+    font-size:25px;
+}
+
+#underlinedLetter {
+    text-decoration: underline;
+}
