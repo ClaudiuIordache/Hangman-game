@@ -6,6 +6,6 @@
 The famous childhood game, The Hangman. 
 A good starting project to test your JS skills. 
 
-JS technologies used: DOM Manipulation, API, Event Listeners.
+JS technologies used: DOM Manipulation, API calls, Event Listeners.
 At first I used an API call to get the words from an external source.
 As a fallback method, I used an array of not-so-used words in English from which the code randomly selects one of them.
