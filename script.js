@@ -1,3 +1,5 @@
+import { wordsArray } from './modules/data.js';
+
 const container = document.getElementById('container');
 const keyboard = document.getElementsByClassName('keyboard');
 const text = document.getElementById('text');
@@ -25,6 +27,11 @@ let firstRow = document.getElementById('firstRow');
 let secondRow = document.getElementById('secondRow');
 let thirdRow = document.getElementById('thirdRow');
 
+const getNewWord = () => {
+  currentWord = wordsArray[Math.floor(Math.random() * wordsArray.length)];
+  return currentWord;
+};
+
 for (var i = 0; i < alphabet.length; i++) {
   alphabetButton[i] = document.createElement('button');
   alphabetButton[i].innerText = alphabet[i];
@@ -45,7 +52,7 @@ container.appendChild(currentImg);
 //   .then((response) => response.json())
 //   .then((data) => Hangman(data.word));
 
-currentWord = arrayOfWords[Math.floor(Math.random() * arrayOfWords.length)];
+currentWord = getNewWord();
 
 const Hangman = (word) => {
   currentImg.src = '/img/hangman0.png';
@@ -153,86 +160,6 @@ reset.addEventListener('click', () => {
   noOfGuesses = 10;
   constructedWord = [];
   container.removeChild(currentImg);
-  currentWord = arrayOfWords[Math.floor(Math.random() * arrayOfWords.length)];
+  currentWord = getNewWord();
   Hangman(currentWord);
-  // fetch(
-  //   'http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&minCorpusCount=8000&maxCorpusCount=-1&minDictionaryCount=3&maxDictionaryCount=-1&minLength=6&maxLength=12&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5'
-  // )
-  //   .then((response) => response.json())
-  //   .then((data) => Hangman(data.word));
-});
-// setTimeout (
-//             () => console.log(highscore),
-//             20000
-//             );
-
-// setTimeout (() => {
-//             let i=0;
-//             while (true) {
-//                 console.log(i);
-//                 i++;
-
-//             }
-// },
-// 1000);
-
-// var a=20;
-// let b=100;
-
-// function sum () {
-//     console.log(a,b);
-//     let x=20;
-//     if (true) {
-//         var c=50;
-//         let d=30;
-//     }
-//     // console.log (c,d);
-// }
-
-// sum();
-
-// console.log(this);
-
-// const claudiu = {
-//     first: 'Claudiu'
-// }
-
-// const marius = claudiu;
-
-// console.log(marius);
-
-// marius.first='Marius';
-// console.log(marius);
-// console.log(claudiu);
-
-// var age = 25;
-// var age2= age;
-
-// age2=24;
-
-// console.log(age);
-
-// let array = ['mama','tata','sora'];
-
-// let [m,t,s] = array;
-
-// console.log(m);
-
-// console.log(...array,'frate');
-
-// let newArray = [...array, 'frate'];
-
-// console.log(...newArray);
-
-// let string='abcdefghijklmnopqrstuvxyz';
-// let noOfEncounters=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-
-// document.addEventListener('keypress', (event) => {
-//         for (var i=0; i<string.length;i++) {
-//             if (event.key==string[i]) {
-//                 noOfEncounters[i]++;
-//                 console.log(`Tasta ${string[i]} a fost apasata de ${noOfEncounters[i]} ori` );
-
-//             }
-//         }
-// });
+ 
