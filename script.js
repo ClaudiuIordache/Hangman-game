@@ -162,4 +162,4 @@ reset.addEventListener('click', () => {
   container.removeChild(currentImg);
   currentWord = getNewWord();
   Hangman(currentWord);
- 
+});
