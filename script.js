@@ -161,5 +161,6 @@ reset.addEventListener('click', () => {
   constructedWord = [];
   container.removeChild(currentImg);
   currentWord = getNewWord();
+  console.log(currentWord);
   Hangman(currentWord);
 });
